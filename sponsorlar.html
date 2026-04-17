@@ -25,6 +25,7 @@ nav{
     display:flex;
     justify-content:space-between;
     align-items:center;
+    flex-wrap:wrap;
 }
 
 .logo{
@@ -36,6 +37,8 @@ nav{
 nav ul{
     display:flex;
     list-style:none;
+    flex-wrap:wrap;
+    padding:0;
 }
 
 nav ul li{
@@ -45,6 +48,7 @@ nav ul li{
 nav ul li a{
     color:white;
     text-decoration:none;
+    font-size:14px;
 }
 
 /* HEADER */
@@ -89,6 +93,7 @@ nav ul li a{
     margin:10px 0;
 }
 
+/* BUTTON */
 .btn{
     display:inline-block;
     padding:8px 12px;
@@ -107,6 +112,38 @@ footer{
     padding:15px;
     margin-top:30px;
 }
+
+/* 📱 MOBILE */
+@media (max-width: 768px) {
+
+    nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul{
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    nav ul li{
+        margin: 5px 0;
+    }
+
+    .header h1{
+        font-size: 22px;
+    }
+
+    .container{
+        grid-template-columns: 1fr;
+    }
+
+    .btn{
+        display:block;
+        margin:8px 0;
+    }
+}
 </style>
 </head>
 
@@ -115,6 +152,7 @@ footer{
 <!-- NAVBAR -->
 <nav>
     <div class="logo">🕌 Marmaris Camileri</div>
+
     <ul>
         <li><a href="index.html">Ana Sayfa</a></li>
         <li><a href="camiler.html">Camiler</a></li>
@@ -138,7 +176,6 @@ footer{
 <!-- SPONSORLAR -->
 <div class="container">
 
-    <!-- Instagram VAR -->
     <div class="card">
         <h3>Dal Kardeşler</h3>
         <p>📍 Kebap</p>
@@ -147,7 +184,6 @@ footer{
         </a>
     </div>
 
-    <!-- Web VAR -->
     <div class="card">
         <h3>Mabel Emlak</h3>
         <p>📍 Marmaris</p>
@@ -156,7 +192,6 @@ footer{
         </a>
     </div>
 
-    <!-- İKİSİ VAR -->
     <div class="card">
         <h3>Ahmet Market</h3>
         <p>📍 Merkez</p>
@@ -170,7 +205,6 @@ footer{
         </a>
     </div>
 
-    <!-- HİÇBİRİ YOK -->
     <div class="card">
         <h3>Ali Bakkal</h3>
         <p>📍 Armutalan</p>

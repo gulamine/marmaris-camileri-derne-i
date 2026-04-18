@@ -5,7 +5,11 @@ const filesToCache = [
   "camiler.html",
   "etkinlikler.html",
   "ezan.html",
-  "yakincami.html",
+  "reklam.html",
+  "faydalı-linkler.html",
+  "iletişim.html",
+  "sponsorlar.html",
+
   "hakkimizda.html"
 ];
 

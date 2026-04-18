@@ -12,13 +12,39 @@ body{
     margin:0;
 }
 
+/* NAVBAR */
 nav{
     background:#0f172a;
     color:white;
-    padding:15px;
+    padding:15px 20px;
     display:flex;
     justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
 }
+/* 🔵 AÇIK MAVİ LOGO */
+.logo{
+    font-size:18px;
+    font-weight:bold;
+    color:#38bdf8;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+nav ul li{
+    margin-left:15px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:14px;
+}
+
 
 nav a{
     color:white;
@@ -102,6 +128,7 @@ button{
         margin:8px 0;
     }
 }
+
 </style>
 </head>
 
@@ -118,7 +145,7 @@ button{
          <li><a href="faydali-linkler.html">Faydalı Linkler</a></li>
         <li><a href="hakkimizda.html">Hakkımızda</a></li>
         <li><a href="iletişim.html">İletişim</a></li>
-        <li><a href="bilgi.html">İlçe Bilgi</a></li>
+         <li><a href="bilgi.html">İlçe Bilgi ve Hava Durumu</a></li>
          <li><a href="reklam.html">Reklam</a></li>
         <li><a href="sponsorlar.html">Sponsorlar</a></li>
     </ul>
@@ -179,7 +206,7 @@ function gonder(e){
     "📷 Instagram: " + insta + "%0A%0A" +
     "📝 Mesaj: " + mesaj;
 
-    let numara = "905325695040"; // BURAYI DEĞİŞTİR
+    let numara = "905345157363"; // BURAYI DEĞİŞTİR
 
     window.open("https://wa.me/" + numara + "?text=" + text);
 }
